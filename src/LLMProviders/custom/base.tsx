@@ -37,7 +37,7 @@ test4`,
 ];
 
 export const default_values = {
-  endpoint: "https://api.openai.com/v1/chat/completions",
+  endpoint: "https://api.together.xyz/v1/chat/completions",
   custom_header: `{
     "Content-Type": "application/json",
     authorization: "Bearer {{api_key}}"
@@ -55,7 +55,8 @@ export const default_values = {
     messages: {{stringify messages}}
 }`,
   // frequency_penalty: 0,
-  model: "gpt-3.5-turbo-16k",
+  // model: "gpt-3.5-turbo-16k",
+  model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
   // presence_penalty: 0.5,
   // top_p: 1,
   // max_tokens: 400,
